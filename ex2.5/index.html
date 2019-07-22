@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html ng-app="dataApp">
+<head>
+    <title>Clock!</title>
+    <script src="angular.js"></script>
+    <script src="bootstrap.js"></script>
+
+    <script src="formCtrl.js"></script>
+</head>
+<body >
+
+    <div ng-controller="formCtrl">
+            <h1>Name</h1>
+            <input type="text" ng-model="person.name" placeholder="Enter your name"/>
+            <h1>Name = {{person.name}}</h1>
+            <br>
+            <pr>Person = {{person | json}}</pr>
+
+            <h1>Age</h1>
+            <input type="number" ng-model="person.age" placeholder="Enter your Age"/>
+            <h1>Age = {{person.age}}</h1>
+            <br>
+            <pr>Person = {{person | json}}</pr>
+
+            <h1>Password</h1>
+            <input type="text" ng-model="person.password" placeholder="Enter your Password"/>
+            <h1>password = {{person.password}}</h1>
+            <br>
+            <pr>Person = {{person | json}}</pr>
+
+           
+            <h1>Gender</h1>
+            <input  ng-model=person.gender type="radio" name="gender" value="male"> Male<br>
+            <input   ng-model=person.gender type="radio" name="gender" value="female"> Female<br>
+            <input  ng-model=person.gender type="radio" name="gender" value="other"> Other
+            <br><br>        
+            <h1>gender = {{person.gender}}</h1>
+            <br>
+            <pr>Person = {{person | json}}</pr>
+
+         
+
+            <h1>Car Company</h1>
+            <select ng-model="person.company_car"> 
+                <option value="volvo">Volvo</option>
+                <option value="Mitsubishi">Mitsubishi</option>
+                <option value="Honda">Honda</option>
+                <option value="Ford">Ford</option>
+              </select>
+            <h1>company_car = {{person.company_car}}</h1>
+            <br>
+            <pr>Person = {{person | json}}</pr>
+       
+              <br>
+        
+        <br>
+        <h1>Have a bike</h1>
+        <input type="checkbox" ng-model="person.isbike" name="vehicle1" value="Bike"> I have a bike<br>
+        <br>
+            <h1>is_bike = {{person.is_bike}}</h1>
+            <br>
+            <pr>Person = {{person | json}}</pr>
+       
+        </body>
+
+
+
+
+
+
+    </div>
+    <br>
+</body>
+</html>
